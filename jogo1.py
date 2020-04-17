@@ -1,5 +1,9 @@
 from random import randint
 from time import sleep
+
+def calc_damage(dice):
+    return randint(1,dice)
+
 computador = randint(0, 2)
 print('---' * 20)
 print('>>> \033[33mJOGO DE AVENTURA\033[m <<<')
