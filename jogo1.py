@@ -15,7 +15,7 @@ vida_heroi = 20
 vida_monstro = 20
 while (vida_heroi > 0) or (vida_monstro > 0):
     computador = randint(0, 2)
-    print('''OPCOES DE BATALHA
+    print('''\033[1;35mOPCOES DE BATALHA\033[m
     [ 0 ] lutar
     [ 1 ] defender
     [ 2 ] fugir ''')
