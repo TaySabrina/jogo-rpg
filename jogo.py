@@ -6,7 +6,14 @@ print('>>> \033[33mJOGO DE AVENTURA\033[m <<<')
 print('---' * 10)
 print('=== \033[31mMISSÃO\033[m ====')
 print('''\033[1mObjetivo: Salvar o item precioso do Castelo Verde, para isso é necessário derrotar alguns mostros para chegar até lá! Boa sorte!!!\033[m''')
-nome = str(input('\033[34mNome do Jogador:  \033[m')).strip()
+
+while True:
+    nome = str(input('\033[34mNome do Jogador:  \033[m')).strip()
+    if not nome.isalpha():
+        print('Erro! Digite apenas um nome!')
+    else:
+        print(f'Seja bem vindo(a), {nome}!')
+        break
 print('INICIANDO JOGO...')
 sleep(2)
 print('{}, você está na frente do Castelo Verde...'.format(nome))
